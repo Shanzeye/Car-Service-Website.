@@ -1,0 +1,113 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contact Section */
+.contact-section {
+    background-image: url('https://images.pexels.com/photos/6873020/pexels-photo-6873020.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'); /* Replace with a contact-related background image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+
+.contact-title {
+    color: #ff6600;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.8); 
+}
+
+button.cta-button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button.cta-button:hover {
+    background-color: #e65c00;
+    box-shadow: 0 6px 15px rgba(255, 102, 0, 0.8); 
+    transform: translateY(-2px);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    button.cta-button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
